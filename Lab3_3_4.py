@@ -18,8 +18,18 @@ lm = linear_model.LinearRegression()
 sales15= pd.merge(s15,q115, how='outer')
 sales15=sales15.dropna()
 
-x=sales15[u'sale_total_15q1']
-y=sales15[u'sale_total_15']
+x=sales15[u'sale_total_15q1'].reshape((len(sales15),1))
+y=sales15[u'sale_total_15'].reshape((len(sales15),1))
+
+plt.scatter(x, y)
+plt.xlabel("Total Sales 2015 Q1")
+plt.ylabel("Total Sales 2015")
+plt.show()
 
 model = lm.fit(x, y)
 predictions = lm.predict(x)
+print lm.score(x,y)
+plt.scatter(y,predictions)
+plt.xlabel("True Values")
+plt.ylabel("Predicted Values")
+plt.show()
