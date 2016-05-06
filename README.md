@@ -29,7 +29,7 @@ like consumers and business owners might react poorly to this increase in tax as
 it will inevitably drive sales even lower. If sales continue to drop, it could result
 in even lower overall revenue than if they kept the same tax rate.
 
-#Critiques
+###Critiques
 I did have one major critique on the methodology used for this project. Right now,
 our model does a pretty good job of predicting how much a single store will make
 assuming it stays open all year, but can not accurately give total counts for the
