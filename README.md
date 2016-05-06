@@ -1,4 +1,4 @@
-###Project Description:
+#Project Description:
 This project analyzed the liquor sales in the state of Iowa. This analysis focused
 on finding the total sales for the state of Iowa. The tax board is interested in
 seeing how much money they can expect to collect in tax revenue from liquor sales.
@@ -13,7 +13,7 @@ interactive version with in the tableau "Sales Mapped.twb" file. You can access
 the code for the data cleaning in the "Lab3_3_3.py" file and the code for the analysis
 and prediction modeling in the "Lab3_3_4.py" file.
 
-#Note:
+####Note:
 While this folder contains cleaned datasets for sales by store and county,
 it does not contain the original dataset as it was too large to push to Github.
 
@@ -29,7 +29,7 @@ like consumers and business owners might react poorly to this increase in tax as
 it will inevitably drive sales even lower. If sales continue to drop, it could result
 in even lower overall revenue than if they kept the same tax rate.
 
-##Critiques 
+##Critiques
 I did have one major critique on the methodology used for this project. Right now,
 our model does a pretty good job of predicting how much a single store will make
 assuming it stays open all year, but can not accurately give total counts for the
