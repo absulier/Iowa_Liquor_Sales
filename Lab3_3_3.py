@@ -2,8 +2,17 @@ import datetime
 import numpy as np
 import pandas as pd
 
-#reads in data, drops redundant columns
+#reads in data
 df = pd.read_csv("Iowa_Liquor_Sales.csv", low_memory=False)
+
+#Creates a county labels df
+county=['County Number','County']
+cn=df[county].dropna()
+cn = cn.groupby(by=['County Number'], as_index=False)
+cn = cn.agg({'County': lambda x: x.iloc[0]})
+cn.to_csv('cn.csv')
+
+#drops redundant columns
 df=df.drop(['County','Category Name','Volume Sold (Gallons)'],axis=1)
 
 #drops to $ from the pricing data
