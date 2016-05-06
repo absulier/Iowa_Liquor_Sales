@@ -17,7 +17,7 @@ and prediction modeling in the "Lab3_3_4.py" file.
 While this folder contains cleaned datasets for sales by store and county,
 it does not contain the original dataset as it was too large to push to Github.
 
-##Possible Effects of possible tax increase
+##Possible Effects of tax increase
 The primary stake holder for this project is the Iowa State Tax Board. Secondary
 stake holders include the owners of the liquor stores, these stores' consumers,
 and every organization that receives money from Iowa state liquor taxes.
@@ -29,7 +29,7 @@ like consumers and business owners might react poorly to this increase in tax as
 it will inevitably drive sales even lower. If sales continue to drop, it could result
 in even lower overall revenue than if they kept the same tax rate.
 
-##Critiques
+#Critiques
 I did have one major critique on the methodology used for this project. Right now,
 our model does a pretty good job of predicting how much a single store will make
 assuming it stays open all year, but can not accurately give total counts for the
